@@ -31,6 +31,10 @@
 #ifndef REDISCLIENT_H
 #define REDISCLIENT_H
 
+#ifdef __APPLE__
+#define ulong unsigned long
+#endif
+
 #include <sys/errno.h>
 #include <sys/socket.h>
 
